@@ -41,7 +41,8 @@ body{
 header{
   width: 100vw;
   height: 830px;
-  background-image: url('/images/main-bg.svg');
+  /* background-image: url('/images/main-bg.svg'); */
+  background-image: url('/images/main-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
