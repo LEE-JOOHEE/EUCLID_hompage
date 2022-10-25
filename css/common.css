@@ -172,6 +172,7 @@ header{
   font-family: "Pretendard-400";
   font-size: 14px;
   color: #222;
+  word-break: break-all;
 }
 .history{
   display: grid;
@@ -259,6 +260,7 @@ header{
   font-family: "Pretendard-400";
   font-size: 16px;
   color: #595A64;
+  word-break: break-all;
 }
 .biz-wrap .card-text:nth-child(1){
   border-right: 1px solid; 
