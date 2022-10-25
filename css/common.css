@@ -55,10 +55,15 @@ header{
   align-items: center;
   overflow: hidden;
   gap: 24px; grid-gap: 24px;
+  align-content: space-between;
 }
 .sns-wrap{position: absolute; right: 0; bottom: 42px;}
 .logo-wrap{grid-column: 2 / span 10; margin-top: 91px;}
 .logo img{width: 484px;}
+#AIsys > .inner:nth-child(1){min-height: 0;}
+#AIsys > .inner:nth-last-child(1){
+  min-height: 399px; max-height: 399px;
+}
 
 /* =================================================== */
 /* Main - nav */
@@ -92,10 +97,10 @@ header{
   -webkit-align-items: center;
   align-items: center;
 }
-.swiper button.swiper-slide:focus{
+/* .swiper button.swiper-slide:focus{
   border-bottom: 3px solid #2E3092;
   outline: none;
-}
+} */
 .swiper-slide::before{
   font-family: "GothicA1-500";
   font-size: 24px;
@@ -124,30 +129,76 @@ header{
 
 .swiper-button-prev{left: 0 !important;}
 .swiper-button-next{right: 0 !important;}
-.swiper-button-next:after, .swiper-button-prev:after{
+.swiper-button-next:after, 
+.swiper-button-prev:after{
   font-size: 28px !important;
   color: #595A64;
+}
+
+/* control */
+.swiper-slide.current{border-bottom: 3px solid #2E3092;}
+.content-wrap{display: none;}
+.content-wrap.current{
+  display: inherit;
 }
 
 /* =================================================== */
 /* Main - content */
 /* =================================================== */
 .flex-row{display: flex; flex-direction: row; flex-wrap: wrap; align-items: center;}
-.content-wrap .inner{align-items: start; min-height: 664px;}
+.content-wrap .inner{align-items: start; min-height: 664px; max-height: 664px;}
 .content-wrap .cont-l{grid-column: span 8 / span 8;}
 .content-wrap .cont-r{grid-column: span 4 / span 4; margin-top: 100px;}
+.content-wrap .cont-full{grid-column: span 12 / span 12;}
+.sub-image, .sub-image-text{
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 24px;
+}
+.sub-image img, 
+.sub-image-text .text-wrap{grid-column: span 4 / span 4;}
+.text-wrap{display: flex; align-items: flex-start;}
+.sub-image-text .circle{
+  width: 66px; height: 66px; padding: 8px;
+  background: #FFFFFF;
+  border: 1px solid #E3E4E9;
+  border-radius: 50%;
+  font-size: 16px; text-align: center;
+  margin-right: 8px;
+}
+.sub-image-text .text{
+  flex: 1;
+  padding: 0 8px;
+  font-family: "GothicA1-400";
+  font-size: 14px;
+  color: #222;
+}
+.history{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+.history .year{text-align: right;}
+.history .content-text{grid-column: span 3 / span 3;}
+.history .content-text .list p::before,
+.content-text .list-700 p::before{
+  background-image: url('/images/icons/dot-700.svg') !important;
+}
+.history .content-text .list p,
+.content-text .list-700 p{color: #595A64 !important;}
 
 .content-text .title{
   border-bottom: 1px solid #E3E4E9;
   padding: 42px 0 16px 0;
 }
 .content-text .sub-title{
-  font-family: "GothicA1-300";
+  font-family: "GothicA1-400";
   font-size: 18px;
   color: #222;
   padding: 16px 0 72px 0;
 }
-.content-text .list p::before{
+.content-text .list p::before,
+.content-text .list-700 p::before{
   content: '';
   background-image: url('/images/icons/dot-900.svg');
   background-repeat: no-repeat;
@@ -157,7 +208,8 @@ header{
   display: inline-block;
   margin-right: 12px;
 }
-.content-text .list p{
+.content-text .list p,
+.content-text .list-700 p{
   font-family: "GothicA1-400";
   font-size: 16px;
   line-height: 1.5;
@@ -165,8 +217,10 @@ header{
   text-indent: -18px;
   margin-bottom: 32px;
 }
-.content-text .list p:nth-last-child(1){margin-bottom: 0;}
-.content-text .list p > span{
+.content-text .list p:nth-last-child(1),
+.content-text .list-700 p:nth-last-child(1){margin-bottom: 0;}
+.content-text .list p > span,
+.content-text .list-700 p > span{
   font-size: 14px;
   color: #595A64;
   margin-left: 10px;
@@ -235,9 +289,6 @@ footer .cont-r{grid-column: span 9 / span 9;}
 footer .content-text .list p::before{background: none;}
 footer .cont-r{display: flex; align-items: flex-start;}
 footer .cont-r .sns-circle-wrap{margin-left: auto;}
-
-
-
 
 
 
