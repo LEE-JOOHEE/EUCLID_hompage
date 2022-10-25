@@ -7,7 +7,7 @@
 body{
   min-width: 1440px; 
   overflow-x: hidden;}
-
+.mt-100{margin-top: 100px !important;}
 
 /* =================================================== */
 /* SNS button */
@@ -18,7 +18,7 @@ body{
   width: 100%;
   display: flex; align-items: center;
   padding: 10px 16px;
-  font-family: "GothicA1-400";
+  font-family: "Pretendard-400";
   font-size: 0.875rem;
   line-height: 1;
   margin-bottom: 8px;
@@ -102,7 +102,7 @@ header{
   outline: none;
 } */
 .swiper-slide::before{
-  font-family: "GothicA1-500";
+  font-family: "Pretendard-500";
   font-size: 24px;
   color: #595A64;
   text-align: center;
@@ -169,7 +169,7 @@ header{
 .sub-image-text .text{
   flex: 1;
   padding: 0 8px;
-  font-family: "GothicA1-400";
+  font-family: "Pretendard-400";
   font-size: 14px;
   color: #222;
 }
@@ -192,7 +192,7 @@ header{
   padding: 42px 0 16px 0;
 }
 .content-text .sub-title{
-  font-family: "GothicA1-400";
+  font-family: "Pretendard-400";
   font-size: 18px;
   color: #222;
   padding: 16px 0 72px 0;
@@ -210,7 +210,7 @@ header{
 }
 .content-text .list p,
 .content-text .list-700 p{
-  font-family: "GothicA1-400";
+  font-family: "Pretendard-400";
   font-size: 16px;
   line-height: 1.5;
   padding: 0 28px;
@@ -255,11 +255,9 @@ header{
   grid-column: span 6 / span 6;
   padding: 8px 16px 44px 16px;
 }
-/* .biz-wrap .card-text h4{font-weight: 600 !important;} */
 .biz-wrap .card-text p{
-  font-family: "GothicA1-400";
-  font-size: 400;
-  font-size: 18px;
+  font-family: "Pretendard-400";
+  font-size: 16px;
   color: #595A64;
 }
 .biz-wrap .card-text:nth-child(1){
@@ -282,15 +280,13 @@ header{
 /* =================================================== */
 /* Footer */
 /* =================================================== */
-footer{background: rgba(178, 233, 253, 0.1); padding: 24px 0;}
+footer{background: rgba(178, 233, 253, 0.1); padding: 24px 0; margin-top: 36px;}
 footer .inner{align-items: start;}
 footer .cont-l{grid-column: span 3 / span 3;}
 footer .cont-r{grid-column: span 9 / span 9;}
 footer .content-text .list p::before{background: none;}
 footer .cont-r{display: flex; align-items: flex-start;}
 footer .cont-r .sns-circle-wrap{margin-left: auto;}
-
-
 
 
 

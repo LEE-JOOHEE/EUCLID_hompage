@@ -2,95 +2,95 @@
 /* font : Gothic_A1 */
 /* ======================================================== */
 @font-face {
-  font-family: "GothicA1-100";
-  src: url("/css/fonts/GothicA1-Thin.ttf");
+  font-family: "Pretendard-100";
+  src: url("/css/fonts/Pretendard-Thin.ttf");
   font-weight: 100;
 }
 @font-face {
-  font-family: "GothicA1-200";
-  src: url("/css/fonts/GothicA1-ExtraLight.ttf");
+  font-family: "Pretendard-200";
+  src: url("/css/fonts/Pretendard-ExtraLight.ttf");
   font-weight: 200;
 }
 @font-face {
-  font-family: "GothicA1-300";
-  src: url("/css/fonts/GothicA1-Light.ttf");
+  font-family: "Pretendard-300";
+  src: url("/css/fonts/Pretendard-Light.ttf");
   font-weight: 300;
 }
 @font-face {
-  font-family: "GothicA1-400";
-  src: url("/css/fonts/GothicA1-Regular.ttf");
+  font-family: "Pretendard-400";
+  src: url("/css/fonts/Pretendard-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
-  font-family: "GothicA1-500";
-  src: url("/css/fonts/GothicA1-Medium.ttf");
+  font-family: "Pretendard-500";
+  src: url("/css/fonts/Pretendard-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
-  font-family: "GothicA1-600";
-  src: url("/css/fonts/GothicA1-SemiBold.ttf");
+  font-family: "Pretendard-600";
+  src: url("/css/fonts/Pretendard-SemiBold.ttf");
   font-weight: 600;
 }
 @font-face {
-  font-family: "GothicA1-700";
-  src: url("/css/fonts/GothicA1-Bold.ttf");
+  font-family: "Pretendard-700";
+  src: url("/css/fonts/Pretendard-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
-  font-family: "GothicA1-800";
-  src: url("/css/fonts/GothicA1-ExtraBold.ttf");
+  font-family: "Pretendard-800";
+  src: url("/css/fonts/Pretendard-ExtraBold.ttf");
   font-weight: 800;
 }
 @font-face {
-  font-family: "GothicA1-900";
-  src: url("/css/fonts/GothicA1-Black.ttf");
+  font-family: "Pretendard-900";
+  src: url("/css/fonts/Pretendard-Black.ttf");
   font-weight: 900;
 }
 
 /* ======================================================== */
 /* font defualt(18px) */
 /* ======================================================== */
-* {font-family: "GothicA1-400"; font-size: 18px; color: #222222;}
+* {font-family: "Pretendard-400"; font-size: 18px; color: #222222;}
 
 /* ======================================================== */
 /* font-weight */
 /* ======================================================== */
-.font-bold-100 {font-family: "GothicA1-100" !important;}
-.font-bold-200 {font-family: "GothicA1-200" !important;}
-.font-bold-300 {font-family: "GothicA1-300" !important;}
-.font-bold-400 {font-family: "GothicA1-400" !important;}
-.font-bold-500 {font-family: "GothicA1-500" !important;}
-.font-bold-600 {font-family: "GothicA1-600" !important;}
-.font-bold-700 {font-family: "GothicA1-700" !important;}
-.font-bold-800 {font-family: "GothicA1-800" !important;}
-.font-bold-900 {font-family: "GothicA1-900" !important;}
+.font-bold-100 {font-family: "Pretendard-100" !important;}
+.font-bold-200 {font-family: "Pretendard-200" !important;}
+.font-bold-300 {font-family: "Pretendard-300" !important;}
+.font-bold-400 {font-family: "Pretendard-400" !important;}
+.font-bold-500 {font-family: "Pretendard-500" !important;}
+.font-bold-600 {font-family: "Pretendard-600" !important;}
+.font-bold-700 {font-family: "Pretendard-700" !important;}
+.font-bold-800 {font-family: "Pretendard-800" !important;}
+.font-bold-900 {font-family: "Pretendard-900" !important;}
 
 /* ======================================================== */
 /* Heading(title) font */
 /* ======================================================== */
 h1, .h1 {/*32px*/
-  font-family: "GothicA1-600" !important;
+  font-family: "Pretendard-600" !important;
   font-weight: 600 !important;
   /* font-size: 2rem !important; */
   font-size: 32px !important;
   line-height: 150% !important;
 }
 h2, .h2 {/*28px*/
-  font-family: "GothicA1-500" !important;
+  font-family: "Pretendard-500" !important;
   font-weight: 500 !important;
   /* font-size: 1.75rem !important; */
   font-size: 28px !important;
   line-height: 150% !important;
 }
 h3, .h3 {/*24px*/
-  font-family: "GothicA1-500" !important;
+  font-family: "Pretendard-500" !important;
   font-weight: 500 !important;
   /* font-size: 1.5rem !important; */
   font-size: 24px !important;
   line-height: 150% !important;
 }
 h4, .h4 {/*20px*/
-  font-family: "GothicA1-500" !important;
+  font-family: "Pretendard-500" !important;
   font-weight: 500 !important;
   /* font-size: 1.25rem !important; */
   font-size: 20px !important;
@@ -100,45 +100,45 @@ h4, .h4 {/*20px*/
 /* ======================================================== */
 /* Paragraph set */
 /* ======================================================== */
-/* .font-14-l{font-family: "GothicA1-300" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
-.font-16-l{font-family: "GothicA1-300" !important; line-height: 1.5 !important; font-size: 1rem !important;}
-.font-18-l{font-family: "GothicA1-300" !important; line-height: 1.5 !important; font-size: 1.125rem !important;}
+/* .font-14-l{font-family: "Pretendard-300" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
+.font-16-l{font-family: "Pretendard-300" !important; line-height: 1.5 !important; font-size: 1rem !important;}
+.font-18-l{font-family: "Pretendard-300" !important; line-height: 1.5 !important; font-size: 1.125rem !important;}
 
-.font-14-r{font-family: "GothicA1-400" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
-.font-16-r{font-family: "GothicA1-400" !important; line-height: 1.5 !important; font-size: 1rem !important;}
-.font-18-r{font-family: "GothicA1-400" !important; line-height: 1.5 !important; font-size: 1.125rem !important;}
+.font-14-r{font-family: "Pretendard-400" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
+.font-16-r{font-family: "Pretendard-400" !important; line-height: 1.5 !important; font-size: 1rem !important;}
+.font-18-r{font-family: "Pretendard-400" !important; line-height: 1.5 !important; font-size: 1.125rem !important;}
 
-.font-14-m{font-family: "GothicA1-500" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
-.font-16-m{font-family: "GothicA1-500" !important; line-height: 1.5 !important; font-size: 1rem !important;}
-.font-18-m{font-family: "GothicA1-500" !important; line-height: 1.5 !important; font-size: 1.125rem !important;}
+.font-14-m{font-family: "Pretendard-500" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
+.font-16-m{font-family: "Pretendard-500" !important; line-height: 1.5 !important; font-size: 1rem !important;}
+.font-18-m{font-family: "Pretendard-500" !important; line-height: 1.5 !important; font-size: 1.125rem !important;}
 
-.font-14-sb{font-family: "GothicA1-600" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
-.font-16-sb{font-family: "GothicA1-600" !important; line-height: 1.5 !important; font-size: 1rem !important;}
-.font-18-sb{font-family: "GothicA1-600" !important; line-height: 1.5 !important; font-size: 1.125rem !important;}
+.font-14-sb{font-family: "Pretendard-600" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
+.font-16-sb{font-family: "Pretendard-600" !important; line-height: 1.5 !important; font-size: 1rem !important;}
+.font-18-sb{font-family: "Pretendard-600" !important; line-height: 1.5 !important; font-size: 1.125rem !important;}
 
-.font-14-b{font-family: "GothicA1-700" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
-.font-16-b{font-family: "GothicA1-700" !important; line-height: 1.5 !important; font-size: 1rem !important;}
-.font-18-b{font-family: "GothicA1-700" !important; line-height: 1.5 !important; font-size: 1.125rem !important;} */
+.font-14-b{font-family: "Pretendard-700" !important; line-height: 1.5 !important; font-size: 0.875rem !important;}
+.font-16-b{font-family: "Pretendard-700" !important; line-height: 1.5 !important; font-size: 1rem !important;}
+.font-18-b{font-family: "Pretendard-700" !important; line-height: 1.5 !important; font-size: 1.125rem !important;} */
 
-.font-14-l{font-family: "GothicA1-300" !important; line-height: 1.5 !important; font-size: 14px !important;}
-.font-16-l{font-family: "GothicA1-300" !important; line-height: 1.5 !important; font-size: 16px !important;}
-.font-18-l{font-family: "GothicA1-300" !important; line-height: 1.5 !important; font-size: 18px !important;}
+.font-14-l{font-family: "Pretendard-300" !important; line-height: 1.5 !important; font-size: 14px !important;}
+.font-16-l{font-family: "Pretendard-300" !important; line-height: 1.5 !important; font-size: 16px !important;}
+.font-18-l{font-family: "Pretendard-300" !important; line-height: 1.5 !important; font-size: 18px !important;}
 
-.font-14-r{font-family: "GothicA1-400" !important; line-height: 1.5 !important; font-size: 14px !important;}
-.font-16-r{font-family: "GothicA1-400" !important; line-height: 1.5 !important; font-size: 16px !important;}
-.font-18-r{font-family: "GothicA1-400" !important; line-height: 1.5 !important; font-size: 18px !important;}
+.font-14-r{font-family: "Pretendard-400" !important; line-height: 1.5 !important; font-size: 14px !important;}
+.font-16-r{font-family: "Pretendard-400" !important; line-height: 1.5 !important; font-size: 16px !important;}
+.font-18-r{font-family: "Pretendard-400" !important; line-height: 1.5 !important; font-size: 18px !important;}
 
-.font-14-m{font-family: "GothicA1-500" !important; line-height: 1.5 !important; font-size: 14px !important;}
-.font-16-m{font-family: "GothicA1-500" !important; line-height: 1.5 !important; font-size: 16px !important;}
-.font-18-m{font-family: "GothicA1-500" !important; line-height: 1.5 !important; font-size: 18px !important;}
+.font-14-m{font-family: "Pretendard-500" !important; line-height: 1.5 !important; font-size: 14px !important;}
+.font-16-m{font-family: "Pretendard-500" !important; line-height: 1.5 !important; font-size: 16px !important;}
+.font-18-m{font-family: "Pretendard-500" !important; line-height: 1.5 !important; font-size: 18px !important;}
 
-.font-14-sb{font-family: "GothicA1-600" !important; line-height: 1.5 !important; font-size: 14px !important;}
-.font-16-sb{font-family: "GothicA1-600" !important; line-height: 1.5 !important; font-size: 16px !important;}
-.font-18-sb{font-family: "GothicA1-600" !important; line-height: 1.5 !important; font-size: 18px !important;}
+.font-14-sb{font-family: "Pretendard-600" !important; line-height: 1.5 !important; font-size: 14px !important;}
+.font-16-sb{font-family: "Pretendard-600" !important; line-height: 1.5 !important; font-size: 16px !important;}
+.font-18-sb{font-family: "Pretendard-600" !important; line-height: 1.5 !important; font-size: 18px !important;}
 
-.font-14-b{font-family: "GothicA1-700" !important; line-height: 1.5 !important; font-size: 14px !important;}
-.font-16-b{font-family: "GothicA1-700" !important; line-height: 1.5 !important; font-size: 16px !important;}
-.font-18-b{font-family: "GothicA1-700" !important; line-height: 1.5 !important; font-size: 18px !important;}
+.font-14-b{font-family: "Pretendard-700" !important; line-height: 1.5 !important; font-size: 14px !important;}
+.font-16-b{font-family: "Pretendard-700" !important; line-height: 1.5 !important; font-size: 16px !important;}
+.font-18-b{font-family: "Pretendard-700" !important; line-height: 1.5 !important; font-size: 18px !important;}
 
 /* ======================================================== */
 /* only font-size */
