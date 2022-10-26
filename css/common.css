@@ -6,7 +6,8 @@
 /* Common */
 body{
   min-width: 1440px; 
-  overflow-x: hidden;}
+  overflow-x: hidden;
+}
 .mt-100{margin-top: 100px !important;}
 
 /* =================================================== */
@@ -75,7 +76,8 @@ header{
   position: relative;
 }
 .swiper {
-  width: 80%;
+  /* width: 80%; */
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   height: 74px;
@@ -123,9 +125,9 @@ header{
 .limeEDU::before{content: 'Lime-EDU';}
 .limeEDU:focus::before,
 .limeEDU:hover::before{content: '라임에듀';}
-.AIsys::before{content: 'AI system';}
+.AIsys::before{content: 'AI 행동인식';}
 .AIsys:focus::before,
-.AIsys:hover::before{content: 'AI 시스템';}
+.AIsys:hover::before{content: '인공지능 행동인식';}
 
 .swiper-button-prev{left: 0 !important;}
 .swiper-button-next{right: 0 !important;}
@@ -133,6 +135,7 @@ header{
 .swiper-button-prev:after{
   font-size: 28px !important;
   color: #595A64;
+  display: none;
 }
 
 /* control */
@@ -290,7 +293,16 @@ footer .content-text .list p::before{background: none;}
 footer .cont-r{display: flex; align-items: flex-start;}
 footer .cont-r .sns-circle-wrap{margin-left: auto;}
 
-
-
-
+/* =================================================== */
+/* Top button */
+/* =================================================== */
+.top-btn{
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid #E3E4E9;
+  border-radius: 50%;
+  display: none;
+}
+.top-btn:hover{box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.08);}
 

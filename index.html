@@ -19,7 +19,6 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
-
   <header>
     <div class="inner">
       <div class="logo-wrap">
@@ -58,7 +57,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="content-wrap current" id="limeNet">
@@ -398,9 +396,8 @@
         </div>
       </div>
     </div>    <!-- biz-wrap end -->
-
   </main>
-
+  
   <footer>
     <div class="inner">
       <div class="cont-l">
@@ -434,24 +431,13 @@
       </div>
     </div>
   </footer>
+  <input type="image" class="top-btn" src="/images/icons/top-btn.svg" onClick="javascript:window.scrollTo(0,0)" alt="맨위로" />
 </body>
 <script>
   var swiper = new Swiper("#navSwiper", {
-    slidesPerView: 4,
-    spaceBetween: 150, //이미지 사이간격
+    slidesPerView: 5,
     keyboard: {
       enabled: true,
-    },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
-    breakpoints: {
-      1920: {slidesPerView: 4},
-      992: {slidesPerView: 4},
-      649: {slidesPerView: 3},
-      400: {slidesPerView: 2},
-      10: {slidesPerView: 1}
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -459,39 +445,24 @@
     },
   });
 
-
   $(document).ready(function(){
+    // top button
+    $(window).scroll(function(){
+      if(
+        $(this).scrollTop() > 200){$(".top-btn").fadeIn();
+      }else{
+        $(".top-btn").fadeOut();
+      }
+    });
+
+    //tab menu
     $(".swiper-wrapper > button").click(function(){
       var tab_id = $(this).attr('data-tab');
-      console.log(tab_id);
-
       $('.swiper-wrapper > button').removeClass('current');
 		  $('.content-wrap').removeClass('current');
       $(this).addClass('current');
       $("#"+tab_id).addClass('current');
     })
   });
-
-
-
-  // const limeDQM = document.getElementById("limeDQM");
-  // const limeNet = document.getElementById("limeNet");
-  // const labelOn = document.getElementById("labelOn");
-  // const limeEDU = document.getElementById("limeEDU");
-  // const AIsys = document.getElementById("AIsys");
-  // document.addEventListener('click', function handleClick(e) {
-
-  //   if(document.querySelector(".limeDQM") === e.target){
-  //     limeDQM.classList.add('show');
-  //     limeNet.classList.add('no-show');
-  //     labelOn.classList.add('no-show');
-  //     limeEDU.classList.add('no-show');
-  //     AIsys.classList.add('no-show');
-  //   }
-
-  //   console.log(document.querySelector(".limeDQM") === e.target);
-  // });
-
-  
 </script>
 </html>
