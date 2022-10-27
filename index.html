@@ -417,7 +417,7 @@
               <span>|  대전광역시 서구 대덕대로 317번길 20, 4층</span>
             </p>
             <p class="mb-4">연구소
-              <span>|  대전광역시 서구 대덕대로 317번길 20, 4층</span>
+              <span>|  대전광역시 동구 계족로 151 지식산업센터 601호</span>
             </p>
             <p class="mb-4">광주지사
               <span>|  광주광역시 동구 금남로 193-22, AI 창업캠프, 6층</span>
@@ -438,7 +438,7 @@
       </div>
     </div>
   </footer>
-  <input type="image" class="top-btn" src="/images/icons/top-btn.svg" onClick="javascript:window.scrollTo(0,0)" alt="맨위로" />
+  <input type="image" class="top-btn" src="/images/icons/top-btn.svg" alt="맨위로" />
 </body>
 <script>
   var swiper = new Swiper("#navSwiper", {
@@ -453,15 +453,6 @@
   });
 
   $(document).ready(function(){
-    // top button
-    $(window).scroll(function(){
-      if(
-        $(this).scrollTop() > 200){$(".top-btn").fadeIn();
-      }else{
-        $(".top-btn").fadeOut();
-      }
-    });
-
     //tab menu
     $(".swiper-wrapper > button").click(function(){
       var tab_id = $(this).attr('data-tab');
@@ -470,6 +461,34 @@
       $(this).addClass('current');
       $("#"+tab_id).addClass('current');
     })
+
+    // jQuery : top to button
+    // $(window).scroll(function(){
+    //   if(
+    //     $(this).scrollTop() > 400){$(".top-btn").fadeIn();
+    //   }else{
+    //     $(".top-btn").fadeOut();
+    //   }
+    // });
+    // $('.top-btn').click(function(){
+    //   $("html, body").animate({scrollTop: 0}, 400, 'swing');
+    // });
   });
+
+  // javascript : top to button
+  const btnScrollToTop = document.querySelector(".top-btn");
+  window.addEventListener('scroll', function(){
+    if(this.scrollY > 400){
+      btnScrollToTop.classList.add('show');
+    }else{
+      btnScrollToTop.classList.remove('show');
+    }
+  });
+  btnScrollToTop.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({top: 0, behavior: "smooth"});
+  });
+
+
 </script>
 </html>
