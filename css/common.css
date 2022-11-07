@@ -234,7 +234,7 @@ header{
   margin-left: 10px;
 }
 .dynamic{
-  display: flex; align-items: flex-start;
+  display: flex; align-items: baseline;
 }
 .dynamic span{
   font-size: 14px;
