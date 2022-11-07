@@ -61,6 +61,7 @@ header{
   gap: 24px; grid-gap: 24px;
   align-content: space-between;
 }
+.inner.big-title{padding: 0 50px;}
 .sns-wrap{position: absolute; right: 0; bottom: 42px;}
 .logo-wrap{grid-column: 2 / span 10; margin-top: 91px;}
 .logo img{width: 484px;}
@@ -152,7 +153,7 @@ header{
 /* Main - content */
 /* =================================================== */
 .flex-row{display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-end;}
-.content-wrap .inner{align-items: start; min-height: 664px; max-height: 664px;}
+.content-wrap .inner{align-items: start; min-height: 664px; max-height: 664px; padding: 0 50px;}
 .content-wrap .cont-l{grid-column: span 8 / span 8;}
 .content-wrap .cont-r{grid-column: span 4 / span 4; margin-top: 100px;}
 #limeNet .cont-r, #limeEDU .cont-r{grid-column: span 3 / span 3; margin-top: 100px;}
@@ -248,7 +249,8 @@ header{
 .info-wrap{background: rgba(178, 233, 253, 0.1);}
 .info-wrap .inner{
   border-bottom: 1px solid #E3E4E9; 
-  padding: 16px 0 24px 0;
+  padding: 16px 50px 24px 50px;
+  /* padding: 16px 0 24px 60px; */
   align-items: start;
 }
 .info-wrap .inner:nth-last-child(1){border-bottom: 0;}
@@ -258,7 +260,7 @@ header{
 /* =================================================== */
 /* Main - business */
 /* =================================================== */
-.biz-wrap .inner{align-items: stretch; gap: 0;}
+.biz-wrap .inner{align-items: stretch; gap: 0; padding: 0 50px;}
 .biz-wrap .card-text{
   grid-column: span 6 / span 6;
 }
@@ -293,7 +295,7 @@ header{
 /* Footer */
 /* =================================================== */
 footer{background: rgba(178, 233, 253, 0.1); padding: 24px 0; margin-top: 72px;}
-footer .inner{align-items: start;}
+footer .inner{align-items: start; padding: 0 50px;}
 footer .cont-l{grid-column: span 3 / span 3;}
 footer .cont-r{grid-column: span 9 / span 9;}
 footer .content-text .list p::before{background: none;}
@@ -313,11 +315,3 @@ footer .cont-r .sns-circle-wrap{margin-left: auto;}
 }
 .top-btn:hover{box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.08);}
 
-
-@media (max-width: 1440px) {
-  .content-wrap .inner{padding: 0 60px;}
-  .inner.big-title{padding: 0 60px;}
-  .info-wrap .inner{padding: 16px 0 24px 60px;}
-  .biz-wrap .inner{padding: 0 60px;}
-  footer .inner{padding: 0 60px;}
-}
